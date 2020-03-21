@@ -288,6 +288,7 @@ class MemoriesViewController: UICollectionViewController, UIImagePickerControlle
         let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
         attributeSet.title = "Happy Days Memory"
         attributeSet.contentDescription = text
+        attributeSet.thumbnailURL = thumbnailURL(for: memory)
 
         // wrap it in a searchable item, using the memory's full path as its unique identifier
         let item = CSSearchableItem(uniqueIdentifier: memory.path, domainIdentifier: "com.sinarabiei", attributeSet: attributeSet)

@@ -2,13 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>We use this to transcribe your narration</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>We use this to record your narration</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We use this to let you import photos
-We use</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -24,9 +17,16 @@ We use</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We use this to record your narration</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We use this to let you import photos
+We use</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>We use this to transcribe your narration</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
